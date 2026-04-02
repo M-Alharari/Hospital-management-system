@@ -48,7 +48,8 @@ namespace Presentation
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddUpdatePerson frmAddNewPerson = new AddUpdatePerson();
-            frmAddNewPerson.ShowDialog();
+            frmAddNewPerson.ShowDialog(); 
+            LoadData();
 
         }
 
@@ -56,12 +57,14 @@ namespace Presentation
         {
             AddUpdatePerson frmAddNewPerson = new AddUpdatePerson((int)dgPeople.CurrentRow.Cells[0].Value);
             frmAddNewPerson.ShowDialog();
+            LoadData();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             AddUpdatePerson frmAddNewPerson = new AddUpdatePerson();
             frmAddNewPerson.ShowDialog();
+            LoadData();
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)

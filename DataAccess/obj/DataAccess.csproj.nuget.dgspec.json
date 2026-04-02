@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\OneDrive\\Dokumente\\C# courses\\ITI\\EF\\Mamdouh\\Projects\\Hospital Management System\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\OneDrive\\Dokumente\\C# courses\\ITI\\EF\\Mamdouh\\Projects\\Hospital Management System\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Dokumente\\C# courses\\ITI\\EF\\Mamdouh\\Projects\\Hospital Management System\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Dell\\OneDrive\\Dokumente\\C# courses\\ITI\\EF\\Mamdouh\\Projects\\Hospital Management System\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\OneDrive\\Dokumente\\C# courses\\ITI\\EF\\Mamdouh\\Projects\\Hospital Management System\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

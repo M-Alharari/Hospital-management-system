@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dell\\OneDrive\\Dokumente\\C# courses\\ITI\\EF\\Mamdouh\\Projects\\Hospital Management System\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FADCE8-C37B-4917-9DB6-1C83AC354F76}|Presentation\\Presentation.csproj|c:\\users\\dell\\documents\\hospitalmanagementsystem\\presentation\\people\\addupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FADCE8-C37B-4917-9DB6-1C83AC354F76}|Presentation\\Presentation.csproj|solutionrelative:presentation\\people\\addupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FADCE8-C37B-4917-9DB6-1C83AC354F76}|Presentation\\Presentation.csproj|c:\\users\\dell\\documents\\hospitalmanagementsystem\\presentation\\people\\peoplelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FADCE8-C37B-4917-9DB6-1C83AC354F76}|Presentation\\Presentation.csproj|solutionrelative:presentation\\people\\peoplelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FADCE8-C37B-4917-9DB6-1C83AC354F76}|Presentation\\Presentation.csproj|c:\\users\\dell\\documents\\hospitalmanagementsystem\\presentation\\people\\peoplelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C7FADCE8-C37B-4917-9DB6-1C83AC354F76}|Presentation\\Presentation.csproj|solutionrelative:presentation\\people\\peoplelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54761BB2-86AA-4FD8-BCE7-3490C47F8DB3}|Business\\Business.csproj|c:\\users\\dell\\documents\\hospitalmanagementsystem\\business\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54761BB2-86AA-4FD8-BCE7-3490C47F8DB3}|Business\\Business.csproj|solutionrelative:business\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FADCE8-C37B-4917-9DB6-1C83AC354F76}|Presentation\\Presentation.csproj|c:\\users\\dell\\documents\\hospitalmanagementsystem\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FADCE8-C37B-4917-9DB6-1C83AC354F76}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +39,70 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PeopleList.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Presentation\\People\\PeopleList.cs",
+              "RelativeDocumentMoniker": "Presentation\\People\\PeopleList.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Presentation\\People\\PeopleList.cs",
+              "RelativeToolTip": "Presentation\\People\\PeopleList.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T13:09:21.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PeopleList.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Presentation\\People\\PeopleList.cs",
+              "RelativeDocumentMoniker": "Presentation\\People\\PeopleList.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Presentation\\People\\PeopleList.cs [Design]",
+              "RelativeToolTip": "Presentation\\People\\PeopleList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T13:09:14.743Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Business\\PersonService.cs",
+              "RelativeDocumentMoniker": "Business\\PersonService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Business\\PersonService.cs",
+              "RelativeToolTip": "Business\\PersonService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAIAwwD4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T13:08:07.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddUpdatePerson.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Presentation\\People\\AddUpdatePerson.cs",
+              "RelativeDocumentMoniker": "Presentation\\People\\AddUpdatePerson.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Presentation\\People\\AddUpdatePerson.cs",
+              "RelativeToolTip": "Presentation\\People\\AddUpdatePerson.cs",
+              "ViewState": "AgIAABABAAAAAAAAAAAAADgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T13:04:01.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\HospitalManagementSystem\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T12:43:05.224Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -60,7 +60,7 @@ namespace Business
 
         
 
-            _repo.Add(person);
+            _repo.Update(person);
         }
         public Person GetPersonDetails(int id)
         {

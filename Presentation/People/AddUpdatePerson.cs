@@ -149,7 +149,7 @@ namespace Presentation
                 this.Close();
             }
         }
-
+       
         private void AddUpdatePerson_Load(object sender, EventArgs e)
         {
             _ResetDefaultValues();
@@ -172,50 +172,101 @@ namespace Presentation
             if (picPerson.ImageLocation == null)
                 picPerson.Image = Resources.Female_512;
         }
-     
+        private Person GetPersonFromUI(string imagePath)
+        {
+            return new Person
+            {
+                FirstName = txtFirstName.Text,
+                SecondName = txtSecondName.Text,
+                ThirdName = txtThirdName.Text,
+                LastName = txtLastName.Text,
+                NationalNo = txtNationalNo.Text,
+                DateOfBirth = BirthDate.Value,
+                Address = txtAddress.Text,
+                Phone = txtPhone.Text,
+                Email = txtEmail.Text,
+                NationalityCountryID = (int)cbCountry.SelectedValue,
+                ImagePath = imagePath,
+                Gender = (short)(rbMale.Checked ? enGender.Male : enGender.Female)
+            };
+        }
+        private void UpdatePersonFromUI(Person person, string imagePath)
+        {
+            person.FirstName = txtFirstName.Text;
+            person.SecondName = txtSecondName.Text;
+            person.ThirdName = txtThirdName.Text;
+            person.LastName = txtLastName.Text;
+            person.NationalNo = txtNationalNo.Text;
+            person.DateOfBirth = BirthDate.Value;
+            person.Address = txtAddress.Text;
+            person.Phone = txtPhone.Text;
+            person.Email = txtEmail.Text;
+            person.NationalityCountryID = (int)cbCountry.SelectedValue;
+            person.ImagePath = imagePath;
+            person.Gender = (short)(rbMale.Checked ? enGender.Male : enGender.Female);
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
-        { 
+        {
+
+            //string finalImagePath = _personService.ProcessPersonImage(_person.ImagePath, _selectedImagePath);
             if (!this.ValidateChildren())
             {
-                MessageBox.Show("Some fields are not valid!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Some fields are not valid!", "Validation Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            string finalImagePath = _personService.ProcessPersonImage(_person.ImagePath, _selectedImagePath);
+
             try
             {
-                // 1. Map the UI to the Object
-                var newPerson = new Person
+                string finalImagePath;
+
+                if (_Mode == enMode.AddNew)
                 {
-                    FirstName = txtFirstName.Text,
-                    SecondName = txtSecondName.Text,
-                    ThirdName = txtThirdName.Text,
-                    LastName = txtLastName.Text,
-                    NationalNo = txtNationalNo.Text,
-                    DateOfBirth = BirthDate.Value,
-                    Address = txtAddress.Text,
-                    Phone = txtPhone.Text,
-                    Email = txtEmail.Text,
-                    NationalityCountryID = (int)cbCountry.SelectedValue,
-                    ImagePath = _selectedImagePath,
+                    // In Add mode → no old image
+                    finalImagePath = _personService.ProcessPersonImage(null, _selectedImagePath);
 
-                    // Use a ternary operator for the gender assignment
-                    Gender = (short)(rbMale.Checked ? enGender.Male : enGender.Female)
-                };
+                    var newPerson = GetPersonFromUI(finalImagePath);
 
-                // 2. Pass the object to the Business Layer
-                _personService.AddPerson(newPerson);
+                    _personService.AddPerson(newPerson);
 
-                // 3. Refresh and Notify
+                    MessageBox.Show("Person saved successfully!", "Saved",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else // Edit Mode
+                {
+                    if (string.IsNullOrEmpty(_selectedImagePath))
+                    {
+                        // No new image selected → keep existing one
+                        finalImagePath = _person.ImagePath;
+                    }
+                    else
+                    {
+                        // New image selected → process it
+                        finalImagePath = _personService.ProcessPersonImage(_person.ImagePath, _selectedImagePath);
+                    }
+
+                    UpdatePersonFromUI(_person, finalImagePath);
+
+                    _personService.UpdatePerson(_person);
+
+                    MessageBox.Show("Person updated successfully!", "Updated",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 _LoadData();
-                MessageBox.Show("Person saved successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-         
 
-        }
+          
+
+            
+
+
+
+            }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
